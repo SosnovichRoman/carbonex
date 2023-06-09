@@ -34,7 +34,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='flex justify-center gap-[110px] flex-wrap mt-9 items-center max-md:gap-[70px] max-sm:gap-[30px]'>
-                    {sectors.map((data) => <Sector data={data} key={data.id} />)}
+                    {sectors?.map((data) => <Sector data={data} key={data.id} />)}
                 </div>
             </section>
         </main>
