@@ -4,7 +4,7 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1560;
+$maxWidthContainer: 1400;
 // x2
 $containerPadding: 15;
 // Ширина срабатывания первого брейкпоинта
@@ -12,6 +12,9 @@ $containerWidth: $maxWidthContainer + $containerPadding + $containerPadding;
 
 @import '../templates/mixins';
 @import '../templates/header.scss';
+
+$light-blue: #007FA7;
+
 
 
 [class*=__container] {
@@ -23,9 +26,67 @@ $containerWidth: $maxWidthContainer + $containerPadding + $containerPadding;
     ;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Play:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Noto Sans';
 }
 
+.text-default {
+    //styleName: Подзаголовок/текст;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.heading-2 {
+    font-family: Play;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-3 {
+    font-family: Play;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+.link-underline{
+    border-bottom: 1px dashed #323232;
+    padding-bottom: 3px;
+}
+
+.button-white {
+    display: inline-flex;
+    padding: 15px 17px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    //styleName: Текст в кнопке;
+    font-family: Play;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-align: right;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.button-white-wide {
+    padding: 15px 73px;
+    border: none;
+}
