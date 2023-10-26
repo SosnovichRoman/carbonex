@@ -60,7 +60,25 @@ body {
     letter-spacing: 0.05em;
 }
 
-.link-underline{
+.text-accent {
+    //styleName: Акцентный текст;
+    font-family: Play;
+    @include adaptiveValue("font-size", 22, 16);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+}
+
+.text-button {
+    //styleName: Текст в кнопке;
+    font-family: Play;
+    @include adaptiveValue("font-size", 16, 14);
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+}
+
+.link-underline {
     border-bottom: 1px dashed #323232;
     padding-bottom: 3px;
 }

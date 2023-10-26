@@ -31,4 +31,25 @@ const sectors = [
     }
 ]
 
-export {sectors};
+const news = [
+    {
+        img: 'img/home/production/01.png',
+        title: 'Жизнь - это химия',
+        desc: 'CARBONEX - является лидером в области фитрованных материалов.',
+        link: '',
+    },
+    {
+        img: 'img/home/production/01.png',
+        title: 'Жизнь - это химия',
+        desc: 'CARBONEX - является лидером в области фитрованных материалов.',
+        link: '',
+    },
+    {
+        img: 'img/home/production/01.png',
+        title: 'Жизнь - это химия',
+        desc: 'CARBONEX - является лидером в области фитрованных материалов.',
+        link: '',
+    },
+]
+
+export {sectors, news};
